@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="products.css">
+
+    <title>Books and Bagels | Products</title>
+</head>
+
+<meta name="description" content="Books and Bagels!">
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/index.html">Books & Bagels</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About Us</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/products.html">Products <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Our Products</h1>
+            <p class="lead"> Please see our products and recommendations below!</p> 
+                <hr class="my-3">
+
+                <!-- Flex container for bagel list & info-box -->
+                <div class="products-container">
+                    <!-- Bagel list -->
+                    <ul class="list-group" id="bagel-list"></ul>
+
+                    <!-- info box -->
+                    <div id="info-container" class="info-box hidden">
+                        <h4 id="info-title"></h4>
+                        <p id="info-details"></p>
+                    </div>
+                </div>
+
+            <hr class="my-3">          
+            <h3>🛒 Your Cart</h3>
+            <div id="cart-container"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <p>&copy; 2025 Books & Bagels. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="/products.js" defer></script>
+</body>
+</html>
